@@ -40,3 +40,64 @@ nav > .box-ul{
 nav > .box-ul > a > li{
     font-size: 0.8em;
 }
+.class-body{
+    width: 100%;
+}
+.class-body > h1,
+.class-body > h1 > span {
+    font-size: 1.2em;
+}
+#id-form{
+    width: 100%;
+}
+label{
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+.box-input-text > input {
+    height: 20px;
+}
+.box-input-price > input {
+    height: 20px;
+}
+.box-input-quant > input {
+    height: 20px;
+}
+#lab-btn{
+    background: #fff;
+    font-size: 1.5em;
+    display: none;
+}
+#btn-add{
+    margin-top: 18px;
+    height: 20px;
+}
+
+/*******************le tri*/
+.box-select{
+    width: 100%;
+}
+#trie-cours{
+    width: 25%;
+    height: 20px;
+}
+/********************************legend*/
+.legend{
+    width: 100%;
+}
+.legend > .sous-legend{
+    width: 100%;
+}
+.sous-legend > div{
+    font-size: 0.8em;
+}
+.sous-legend > strong {
+    font-size: 0.7em;
+}
+/********************************/
+.add-de-user{
+    width: 100%;
+}
+.result{
+    width: 95%;
+}
