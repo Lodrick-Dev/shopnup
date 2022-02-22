@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleGlob/styles.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 320px)" href="./styles/responsCss/style-320.css" />
+
+    <title>Shooooop</title>
+    <!-- <script src="/supp.js" defer></script> -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./items/logo/logo-shopnup.png" alt="log-shop-love">
+        </div>
+        <div id="btn-menu">
+            <img src="./items/menu/logo-320.png" alt="">
+        </div>
+        <div class="box-nav">
+            <nav>
+                <ul class="box-ul">
+                    <a href=""><li>Accueil</li></a>
+                    <a href=""><li>Contact</li></a>
+                    <a href=""><li>Download</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="class-body">
+        <h1>Bonne course <span id="name-title-user">Jeune Terrien
+            <i class="fas fa-burger-soda"></i>
+        </span> </h1>
+        <form action="" id="id-form">
+            <div class="box-input-text">
+                <label for="put-text">Produit</label>
+                <input type="text" name="" id="put-text" autocomplete="off" placeholder="Ajouter un produit" required>
+            </div>
+            <div class="box-input-price">
+                <label for="put-price">Prix</label>
+                <input type="number" name="" id="put-price" autocomplete="off" placeholder="00.00" required>
+            </div>
+            <div class="box-input-quant">
+                <label for="put-quant">Qnt</label>
+                <input type="number" id="put-quant" value="1" required>
+            </div>
+            <div class="box-btn">
+                <p for="" id="lab-btn">...</p>
+                <input type="button" value="Ajouter" id="btn-add" autocomplete="off">
+            </div>
+        </form>
+        <!-- <div class="result"></div>
+    <div id="total">00.00</div> -->
+    </div>
+    <div class="box-select">
+        <select name="" id="trie-cours">
+            <option value="none">--Trier--</option>
+            <option value="croissant">Prix Croissant</option>
+            <option value="decroissant">Prix Décroissant</option>
+        </select>
+    </div>
+    <div class="legend">
+        <div class="sous-legend">
+            <div>Nom</div>
+            <div>Prix</div>
+            <div>Qnt</div>
+            <div>Sous-total</div>
+                <strong class="box-du-total">Total : <div id="total">00.00</div>
+                </strong>
+                <!-- <div id="total">00.00</div> -->
+        </div>
+    </div>
+    <div class="add-de-user">
+        <div class="result"></div>
+        <!-- <div id="total">00.00</div> -->
+    </div>
+    <!-- <script src="/app.js"></script> -->
+    <!-- <script src="/application.js"></script> -->
+    <script src="./js/condition.js"></script>
+</body>
+</html>
