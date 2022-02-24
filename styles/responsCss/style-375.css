@@ -25,7 +25,7 @@ header > .logo{
     top: 0;
 }
 header > .logo > img{
-    height: 60px;
+    height: 90px;
 }
 .btn-menu-swip{
     position: absolute;
@@ -34,7 +34,7 @@ header > .logo > img{
     /* background: #00ac39; */
     height: 30px;
     width: 30px;
-    transform: translateX(450%);
+    transform: translateX(520%);
     overflow: visible !important;
     top: 80px;
     z-index: 500;
@@ -92,7 +92,7 @@ nav > .box-ul > a > li{
 }
 .class-body > h1,
 .class-body > h1 > span {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 5px 0;
     font-weight: bold;
 }
@@ -112,38 +112,41 @@ label{
     flex-direction: column;
 }
 .box-input-text > input {
-    font-size:  1em !important;
-    height: 20px !important;
-    font-weight: bold !important;
-    padding: 0 3px !important;
+    font-size:  1.2em;
+    height: 27px;
+    font-weight: bold;
+    padding: 5px;
 }
 .box-input-price > input {
-    font-size:  0.8em !important;
-    height: 20px !important;
-    font-weight: bold !important;
-    padding: 3px !important;
+    font-size:  1.1em;
+    height: 27px;
+    font-weight: bold;
+    padding: 5px;
 }
 .box-input-quant > label {
    padding: 0;
 }
 #put-quant {
-    height: 20px;
+    height: 27px;
     font-weight: bold;
-    padding: 0 3px;
-    font-size: 0.8em !important;
+    padding: 5px;
+    font-size:  1.2em !important;
 }
 .box-btn{
     width: 8%;
+    overflow: hidden;
 }
 #lab-btn{
     background: #fff;
-    font-size: 1.5em;
+    font-size: 2em;
     display: none;
 }
 #btn-add{
     margin-top: 21px;
-    height: 20px;
+    font-size: 1.2em;
+    height: 25px;
     font-weight: bold;
+    overflow: hidden;
 }
 
 /*******************le tri*/
@@ -163,6 +166,7 @@ label{
 /********************************legend*/
 .legend{
     width: 100%;
+    padding: 0 3px;
 }
 .legend > .sous-legend{
     width: 100%;
@@ -189,12 +193,10 @@ label{
     transform: translate(-50%, 50%);
     left: 50%;
     font-size: 1em;
-    text-align: center;
 }
 #total{
     padding: 0 5px;
     /* width: 60%; */
-    text-align: center;
 }
 /******************************Display prod add**/
 .no-prod{
