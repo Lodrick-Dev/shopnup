@@ -1,24 +1,27 @@
+
+html, body{
+    /* position: relative; */
+    background: rgb(15,19,51);
+    background: -moz-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1333",endColorstr="#fdf02d",GradientType=1);
+    background-repeat: no-repeat;
+    height: 100%;
+}
 header{
     width: 100%;
-    height: 100px;
+    height: 17vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background: #fff; */
 }
-body{
-    overflow-x: hidden;
-    background: rgb(15,19,51);
-background: -moz-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
-background: linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1333",endColorstr="#fdf02d",GradientType=1);
-background-repeat: no-repeat;
-height: 100vh;
-}
-header .logo{
-margin: 20px 0 0;
+header > .logo{
+    position: absolute;
+    top: 0;
 }
 header > .logo > img{
     height: 60px;
@@ -27,13 +30,16 @@ header > .logo > img{
     position: absolute;
     /* right: 10px; */
     transition: 1s;
-    /* height: 30px; */
-    transform: translateX(500%);
+    /* background: #00ac39; */
+    height: 30px;
+    width: 30px;
+    transform: translateX(450%);
+    overflow: visible !important;
     top: 80px;
     z-index: 500;
 }
 .btn-main-left{
-    transform: translateX(-500%) rotate(180deg);
+    transform: translateX(-480%) rotate(180deg);
     /* left: 10px; */
 }
 #btn-menu > h2{
@@ -52,11 +58,12 @@ header > .logo > img{
 .box-nav{
     position: absolute;
     height: 20px;
-    top: 83px;
+    top: 90px;
     width: 90%;
     /* background-color: rgb(105, 168, 168); */
     padding: 0;
     transform: translateX(130%);
+    overflow: visible;
     /* transform: translateX(70%); */
 }
 .box-nav-actif{
@@ -65,7 +72,7 @@ header > .logo > img{
 
 /******************la nav*/
 nav{
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 3px;
     width: 85%;
     background: rgb(22, 29, 82);
@@ -164,7 +171,7 @@ label{
     font-weight: bold;
 }
 .sous-legend > div:nth-child(4){
-    /* background: #00ac39; */
+    font-size: 0.7em;
 }
 
 /********************************************box du total*/
@@ -193,6 +200,23 @@ label{
 .add-de-user{
     width: 100%;
 }
+.sous-legend{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 0.5fr;
+}
+.prod-add-js{
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 0.5fr;
+}
+.btn-supp-new-js {
+    /* width: 20%; */
+}
+.btn-spp-new-js > i{
+    pointer-events: none;
+}
 .result{
-    width: 95%;
+    width: 100%;
+}
+.result > div{
+    font-size: 1em;
+    font-weight: bold;
 }

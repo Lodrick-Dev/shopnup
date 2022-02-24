@@ -111,7 +111,7 @@ let structure_add = [];
         <div>${prodRecordLocal[i].prix.toLocaleString('fr', {minimumFractionDigits: 2, maximumFractionDigits: 2})} € </div>
         <div>${prodRecordLocal[i].quant} X</div>
         <div>${prodRecordLocal[i].sous_to.toLocaleString('fr', {minimumFractionDigits: 2, maximumFractionDigits: 2})} € </div>
-        <button class="btn-supp-new-js">Supp</button>
+        <button class="btn-supp-new-js"><i class="fas fa-trash"></i></button>
         </div>`;
         }
         if(i == prodRecordLocal.length){
@@ -119,7 +119,6 @@ let structure_add = [];
         parentB.innerHTML = structure_add;
         }
          display_total();
-
     }
 
 //recupérer les btn

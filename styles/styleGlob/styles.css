@@ -6,10 +6,9 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
-body{
-    overflow-x: hidden; /*horizntal*/
-}
+
 /***********************le header*/
 header{
     width: 100%;
