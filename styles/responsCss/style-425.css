@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2? family= Poppins & display=swap");
 html, body{
     /* position: relative; */
     background: rgb(15,19,51);
@@ -100,6 +100,7 @@ nav > .box-ul > a > li{
 /*****************************le form*/
 #id-form{
     width: 100%;
+    padding: 0 5px;
 }
 label{
     font-size: 0.9em;
@@ -114,13 +115,13 @@ label{
 }
 .box-input-text > input {
     font-size:  1.2em;
-    height: 27px;
+    height: 32px;
     font-weight: bold;
     padding: 5px;
 }
 .box-input-price > input {
     font-size:  1.1em;
-    height: 27px;
+    height: 32px;
     font-weight: bold;
     padding: 5px;
 }
@@ -128,7 +129,7 @@ label{
    padding: 0;
 }
 #put-quant {
-    height: 27px;
+    height: 32px;
     font-weight: bold;
     padding: 5px;
     font-size:  1.2em !important;
@@ -144,8 +145,9 @@ label{
 }
 #btn-add{
     margin-top: 21px;
+    border-radius: 3px !important;
     font-size: 1.2em;
-    height: 25px;
+    height: 32px;
     font-weight: bold;
     overflow: hidden;
 }
@@ -166,7 +168,7 @@ label{
 }
 /********************************legend*/
 .legend{
-    width: 100%;
+    width: 90%;
     padding: 0 3px;
 }
 .legend > .sous-legend{
@@ -204,7 +206,8 @@ label{
     font-weight: bold;
 }
 .add-de-user{
-    width: 100%;
+    width: 90%;
+    border-radius: 3px;
 }
 .sous-legend{
     display: grid;
