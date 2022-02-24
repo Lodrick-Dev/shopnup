@@ -1,5 +1,42 @@
+//le btn menu
+const btn_main = document.getElementById('btn-menu');
+const box_main = document.querySelector(".box-nav")
+console.log(btn_main);
+// btn_main.addEventListener("click", ()=>{
+//     alert("touche downs")
+// })
+let touchstartX = 0;
+let touchendX = 0;
+
+// const slider = document.getElementById('slider')
+
+function handleGesture() {
+  if (touchendX < touchstartX){
+      btn_main.classList.add('btn-main-left');
+      box_main.classList.add("box-nav-actif")
+      //   alert('swiped left!');
+    }
+    if (touchendX > touchstartX){
+        btn_main.classList.remove('btn-main-left');
+        box_main.classList.remove("box-nav-actif")
+    //   alert('swiped right!')
+  }
+}
+
+btn_main.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+  console.log(touchstartX);
+})
+
+btn_main.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    handleGesture()
+})
+
+
+/////le form
 let btn_add = document.getElementById('btn-add');
-const parentB = document.querySelector('.result')
+const parentB = document.querySelector('.result');
 let sous_to;
 let id_counter= 0;
 

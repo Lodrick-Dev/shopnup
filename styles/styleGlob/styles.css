@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     overflow-x: hidden; /*horizntal*/
@@ -11,7 +14,7 @@ body{
 header{
     width: 100%;
     height: 150px;
-    background: rgb(3, 3, 3);
+    /* background: rgb(3, 3, 3); */
     display: flex;
     justify-content: space-between;
 }
@@ -50,19 +53,19 @@ nav{
 
 /************************************le corps**/
 .class-body{
-    margin: 0 auto;
+    margin: 10px auto 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 80%;
-    background: #f7f304;
+    /* background: #f7f304; */
 }
 #id-form{
     display: flex;
     width: 60%;
     justify-content: center;
     justify-content: space-around;
-    background: #ee2d2d;
+    /* background: #ee2d2d; */
 }
 label{
     font-size: 1.5em;
@@ -134,14 +137,14 @@ label{
 .legend{
     width: 80%;
     margin: 0 auto;
-    background: #ee2d2d;
+    /* background: #ee2d2d; */
 }
 .sous-legend{
     width: 60%;
     margin: 0 auto;
-    background: #f7f304;
+    /* background: #f7f304; */
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 0.8fr 1fr;
     grid-template-rows: auto;
 }
 .box-du-total{
@@ -155,7 +158,7 @@ label{
     align-items: center;
     flex-direction: column;
     width: 80%;
-    background: #ee2d2d;
+    /* background: #ee2d2d; */
 }
 .result{
     background: rgb(233, 159, 159);
@@ -165,12 +168,12 @@ label{
 
 /**********css-add-js*/
 .sous-total{
-    background: #ee2d2d;
+    /* background: #ee2d2d; */
     padding: 4px;
     border-radius: 0 15px 0 15px;
 }
 #total{
-    background: #f7f304;
+    /* background: #f7f304; */
     width: 30%;
 }
 
