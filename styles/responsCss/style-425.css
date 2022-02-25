@@ -2,9 +2,9 @@
 html, body{
     /* position: relative; */
     background: rgb(15,19,51);
-    background: -moz-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
-    background: linear-gradient(0deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: -moz-linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: -webkit-linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1333",endColorstr="#fdf02d",GradientType=1);
     background-repeat: no-repeat;
     height: 100%;
@@ -96,6 +96,7 @@ nav > .box-ul > a > li{
     font-size: 1.2em;
     padding: 5px 0;
     font-weight: bold;
+    color: #fff;
 }
 /*****************************le form*/
 #id-form{
@@ -105,6 +106,7 @@ nav > .box-ul > a > li{
 label{
     font-size: 0.9em;
     font-weight:bold;
+    color: #fff;
     padding-left: 5px;
 }
 .box-input-text,
@@ -136,7 +138,6 @@ label{
 }
 .box-btn{
     width: 10%;
-    background: #00ac39;
     overflow: visible;
 }
 
