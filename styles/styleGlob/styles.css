@@ -112,18 +112,6 @@ label{
     border-radius: 3px;
     height: 30px;
 }
-#lab-btn{
-    font-size: 1.5em;
-    animation: go-come 1.5s linear infinite;
-    opacity: 1;
-}
-@keyframes go-come {
-    0%{ transform: translateX(80%);
-    opacity: 0;}
-    50%{opacity: 1;}
-    100%{transform: translateX(0%);
-    opacity: 0;}
-}
 
 /***********************apres le form*/
 /***********************************le select*/

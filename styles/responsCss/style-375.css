@@ -137,11 +137,7 @@ label{
     background: #2b72f5 !important;
     overflow: visible;
 }
-#lab-btn{
-    background: #fff;
-    font-size: 2em;
-    display: none;
-}
+
 #btn-add{
     margin-top: 21px;
     font-size: 1.2em;

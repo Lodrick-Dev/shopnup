@@ -139,11 +139,7 @@ label{
     background: #00ac39;
     overflow: visible;
 }
-#lab-btn{
-    background: #fff;
-    font-size: 2em;
-    display: none;
-}
+
 #btn-add{
     margin-top: 21px;
     font-size: 1.2em;
