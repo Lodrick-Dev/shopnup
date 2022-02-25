@@ -141,11 +141,17 @@ label{
 
 #btn-add{
     margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 20px;
     font-weight: bold;
     overflow: visible;
 }
-
+#btn-add > i{
+    pointer-events: none;
+}
 /*******************le tri*/
 .box-select{
     width: 100%;

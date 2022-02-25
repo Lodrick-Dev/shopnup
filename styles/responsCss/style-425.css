@@ -146,8 +146,14 @@ label{
     height: 32px;
     font-weight: bold;
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+#btn-add > i{
+    pointer-events: none;
+}
 /*******************le tri*/
 .box-select{
     width: 100%;
