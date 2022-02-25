@@ -112,14 +112,14 @@ label{
     flex-direction: column;
 }
 .box-input-text > input {
-    font-size:  1em !important;
-    height: 20px !important;
+    font-size:  0.9em !important;
+    height: 32px !important;
     font-weight: bold !important;
     padding: 0 3px !important;
 }
 .box-input-price > input {
     font-size:  0.8em !important;
-    height: 20px !important;
+    height: 32px !important;
     font-weight: bold !important;
     padding: 3px !important;
 }
@@ -134,7 +134,7 @@ label{
 }
 .box-btn{
     width: 10%;
-    background: #00ac39;
+    background: #ff31dd !important;
     overflow: visible;
 }
 #lab-btn{
@@ -146,6 +146,7 @@ label{
     margin-top: 21px;
     height: 20px;
     font-weight: bold;
+    overflow: visible;
 }
 
 /*******************le tri*/

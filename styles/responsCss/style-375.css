@@ -134,7 +134,7 @@ label{
 }
 .box-btn{
     width: 10%;
-    background: #00ac39;
+    background: #2b72f5 !important;
     overflow: visible;
 }
 #lab-btn{
@@ -147,7 +147,7 @@ label{
     font-size: 1.2em;
     height: 25px;
     font-weight: bold;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /*******************le tri*/
