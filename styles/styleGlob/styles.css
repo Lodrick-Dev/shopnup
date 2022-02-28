@@ -119,6 +119,13 @@ label{
 #btn-add > i{
     pointer-events: none;
 }
+.btn-supp-new-js{
+    background: #fa9380;
+}
+.btn-supp-new-js > i{
+    pointer-events: none;
+    color: #216592;
+}
 /***********************apres le form*/
 /***********************************le select*/
 .box-select{
@@ -154,7 +161,7 @@ label{
     /* background: #ee2d2d; */
 }
 .result{
-    background: rgb(233, 159, 159);
+    background: #4baff1;
     width: 60%;
 }
 
