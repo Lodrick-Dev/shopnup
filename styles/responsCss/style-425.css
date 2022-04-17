@@ -236,3 +236,28 @@ label{
     font-size: 1em;
     font-weight: bold;
 }
+/****************************section contact***/
+#section-contact > div{
+ width: 80%;
+ margin: 50px auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 1em;
+}
+#section-contact > div > a{
+    font-size: 1.4em;
+    color: #00ac39;
+}
+#page-info > div{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+}
