@@ -46,13 +46,13 @@ const display_to = document.getElementById('total');
 function addProduction(e) {
     e.preventDefault();
     if(document.getElementById("put-text").value === ""){
-        return alert(" Lol Veuillez ajouter un produit")
+        return alert(" Lol! Veuillez ajouter un produit")
     }
     else if(document.getElementById("put-price").value == 0 || document.getElementById("put-price").value ===""){
-        return alert("Lol Veuillez ajouter un prix")
+        return alert("Hum! Veuillez ajouter un prix")
     }
     else if(document.getElementById("put-quant").value <= 0){
-        return alert("Lol La quantité doit être égal ou supérieur a 1")
+        return alert("Hum ! La quantité doit être égal ou supérieur a 1")
     }
     else{
         id_counter = Math.random();
@@ -258,7 +258,7 @@ function swipUp() {
               localStorage.clear();
               location.reload();
           }else{
-              alert("Mais lol y a rien a effacer !")
+              alert("Mais lol ! Y a rien a effacer !")
           }
       }
   })
