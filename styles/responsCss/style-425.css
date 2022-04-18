@@ -11,7 +11,7 @@ html, body{
 }
 header{
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ header > .logo > img{
     width: 30px;
     transform: translateX(600%);
     overflow: visible !important;
-    top: 80px;
+    top: 140px;
     z-index: 500;
 }
 .btn-main-left{
@@ -59,7 +59,7 @@ header > .logo > img{
 .box-nav{
     position: absolute;
     height: 30px;
-    top: 100px;
+    top: 170px;
     width: 90%;
     /* background-color: rgb(105, 168, 168); */
     padding: 0;
@@ -186,23 +186,51 @@ label{
 }
 
 /********************************************box du total*/
-.box-du-total{
+.box-tota-prix-n-delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+    background: #00ac39;
+    bottom: -20px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    margin-bottom: 10px;
+}
+.add-class-to-btn-del{
+    bottom: 45px;
+}
+.box-tota-prix-n-delete > div > i{
+    margin-top: 15px;
+    font-size: 2em;
+    pointer-events: none;
+}
+.box-du-total{
+    /* position: fixed; */
     background: #00ac39;
     display: flex;
     justify-content:flex-start;
     bottom: 10px;
     padding: 5px;
     border-radius: 5px;
-    /* width: 40%; */
-    margin-bottom: 5px;
-    transform: translate(-50%, 50%);
+    /********************************** width: 40%; */
+    margin-bottom: 15px;
+    /* transform: translate(-50%, 50%); */
     left: 50%;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: bold !important;
 }
 #total{
     padding: 0 5px;
     /* width: 60%; */
+}
+#btn-to-clear-all{
+    background: crimson;
+    padding: 0px 30px;
+    border-radius: 5px;
 }
 /******************************Display prod add**/
 .no-prod{

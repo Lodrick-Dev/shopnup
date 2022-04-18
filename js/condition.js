@@ -46,13 +46,13 @@ const display_to = document.getElementById('total');
 function addProduction(e) {
     e.preventDefault();
     if(document.getElementById("put-text").value === ""){
-        return alert("Veuillez ajouter un produit")
+        return alert(" Lol Veuillez ajouter un produit")
     }
     else if(document.getElementById("put-price").value == 0 || document.getElementById("put-price").value ===""){
-        return alert("Veuillez ajouter un prix")
+        return alert("Lol Veuillez ajouter un prix")
     }
     else if(document.getElementById("put-quant").value <= 0){
-        return alert("La quantité doit être égal ou supérieur a 1")
+        return alert("Lol La quantité doit être égal ou supérieur a 1")
     }
     else{
         id_counter = Math.random();
@@ -216,3 +216,49 @@ function funcFiltrePrix(e){
             };
 }
 filtre_prix.addEventListener('input', funcFiltrePrix);
+
+//To clear all
+let touchstartY = 0;
+let touchendY = 0;
+const swipDiv = document.querySelector(".box-tota-prix-n-delete");
+const btnClearAll = document.getElementById("btn-to-clear-all");
+
+swipDiv.addEventListener('click', swipUp);
+function swipUp() {
+    if (touchendY < touchstartY){
+        swipDiv.classList.add('add-class-to-btn-del');
+        // box_main.classList.add("box-nav-actif")
+        //   alert('swiped left!');
+      }
+      if (touchendY > touchstartY){
+          swipDiv.classList.remove('add-class-to-btn-del');
+        //   box_main.classList.remove("box-nav-actif")
+      //   alert('swiped right!')
+    }
+  }
+  
+  swipDiv.addEventListener('touchstart', e => {
+    touchstartY = e.changedTouches[0].screenY
+    console.log(touchstartY);
+  })
+  
+  swipDiv.addEventListener('touchend', e => {
+      touchendY = e.changedTouches[0].screenY
+      swipUp()
+  })
+
+  btnClearAll.addEventListener('click', (e)=>{
+      if(!confirm("Vous êtes sur le point de tout effacer, voulez-vous vraiment continuer ?")){
+          e.preventDefault();
+          console.log("Anuler")
+          return;
+      }else{
+          //check if produiLocal exist 
+          if(localStorage.getItem('produitLocal') !== null){
+              localStorage.clear();
+              location.reload();
+          }else{
+              alert("Mais lol y a rien a effacer !")
+          }
+      }
+  })

@@ -147,6 +147,10 @@ label{
     grid-template-columns: 2fr 1fr 0.8fr 1fr;
     grid-template-rows: auto;
 }
+#box-tota-prix-n-delete{
+    display: flex;
+    flex-direction: column;
+}
 .box-du-total{
     display: flex;
     justify-content: space-around;
@@ -188,4 +192,12 @@ label{
 
 .id-none{
     display: none;
+}
+#inst-swip{
+    text-align: center;
+    background: #fa9380;
+    color: #000000 !important;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
 }
