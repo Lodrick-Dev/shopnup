@@ -183,25 +183,8 @@ label{
 }
 
 /********************************************box du total*/
-.box-du-total{
-    position: fixed;
-    background: #00ac39;
-    display: flex;
-    justify-content:flex-start;
-    bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    /* width: 40%; */
-    margin-bottom: 5px;
-    transform: translate(-50%, 50%);
-    left: 50%;
-    font-size: 1em;
-    text-align: center;
-}
-#total{
-    padding: 0 5px;
-    /* width: 60%; */
-    text-align: center;
+.box-tota-prix-n-delete{
+    width: 50% !important;
 }
 /******************************Display prod add**/
 .no-prod{

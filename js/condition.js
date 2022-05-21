@@ -1,14 +1,9 @@
 //le btn menu
 const btn_main = document.getElementById('btn-menu');
 const box_main = document.querySelector(".box-nav")
-console.log(btn_main);
-// btn_main.addEventListener("click", ()=>{
-//     alert("touche downs")
-// })
 let touchstartX = 0;
 let touchendX = 0;
 
-// const slider = document.getElementById('slider')
 
 function handleGesture() {
   if (touchendX < touchstartX){
@@ -217,13 +212,15 @@ function funcFiltrePrix(e){
 }
 filtre_prix.addEventListener('input', funcFiltrePrix);
 
+
+
 //To clear all
 let touchstartY = 0;
 let touchendY = 0;
 const swipDiv = document.querySelector(".box-tota-prix-n-delete");
 const btnClearAll = document.getElementById("btn-to-clear-all");
 
-swipDiv.addEventListener('click', swipUp);
+// swipDiv.addEventListener('click', swipUp);
 function swipUp() {
     if (touchendY < touchstartY){
         swipDiv.classList.add('add-class-to-btn-del');
@@ -246,6 +243,8 @@ function swipUp() {
       touchendY = e.changedTouches[0].screenY
       swipUp()
   })
+
+
 
   btnClearAll.addEventListener('click', (e)=>{
       if(!confirm("Vous êtes sur le point de tout effacer, voulez-vous vraiment continuer ?")){

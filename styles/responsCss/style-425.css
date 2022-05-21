@@ -23,21 +23,20 @@ header{
 header > .logo{
     position: absolute;
     top: 0;
+    /* background: #00ac39; */
 }
 header > .logo > img{
     height: 110px;
 }
 .btn-menu-swip{
     position: absolute;
-    /* right: 10px; */
     transition: 1s;
     /* background: #00ac39; */
     height: 30px;
     width: 30px;
-    transform: translateX(600%);
+    transform: translateX(500%);
+    /* transform: translate(0%, 100%); */
     overflow: visible !important;
-    top: 140px;
-    z-index: 500;
 }
 .btn-main-left{
     transform: translateX(-480%) rotate(180deg);
@@ -59,7 +58,7 @@ header > .logo > img{
 .box-nav{
     position: absolute;
     height: 30px;
-    top: 170px;
+    top: 120px;
     width: 90%;
     /* background-color: rgb(105, 168, 168); */
     padding: 0;
@@ -187,50 +186,52 @@ label{
 
 /********************************************box du total*/
 .box-tota-prix-n-delete{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    width: 38%;
     position: fixed;
-    padding: 10px;
-    border-radius: 5px;
-    background: #00ac39;
-    bottom: -20px;
-    transform: translate(-50%, 50%);
-    left: 50%;
-    margin-bottom: 10px;
-}
-.add-class-to-btn-del{
-    bottom: 45px;
-}
-.box-tota-prix-n-delete > div > i{
-    margin-top: 15px;
-    font-size: 2em;
-    pointer-events: none;
-}
-.box-du-total{
-    /* position: fixed; */
-    background: #00ac39;
-    display: flex;
-    justify-content:flex-start;
-    bottom: 10px;
+    display: flex !important;
+    flex-direction: column!important;
+    justify-content: space-between;
+    height: 20vh;
     padding: 5px;
     border-radius: 5px;
-    /********************************** width: 40%; */
-    margin-bottom: 15px;
-    /* transform: translate(-50%, 50%); */
+    background: #00ac39;
+    bottom: -25px;
     left: 50%;
-    font-size: 1.2em;
+    transform: translate(-50%, 50%);
+    margin-bottom: 10px;
+    overflow-y: hidden;
+}
+
+.box-du-total{
+    background: #fff;
+    display: flex !important;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #000000;
+    font-size: 1em;
     font-weight: bold !important;
 }
 #total{
     padding: 0 5px;
-    /* width: 60%; */
 }
 #btn-to-clear-all{
     background: crimson;
-    padding: 0px 30px;
     border-radius: 5px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+#btn-to-clear-all > i{
+    font-size: 2em;
+    pointer-events: none;
+}
+
+.add-class-to-btn-del {
+    bottom: 45px;
 }
 /******************************Display prod add**/
 .no-prod{
