@@ -1,0 +1,11 @@
+.box-tota-prix-n-delete{
+    height: 15vh;
+    display: flex !important;
+    flex-direction: column!important;
+    justify-content: space-around;
+    /* background: #fff; */
+}
+
+.add-class-to-btn-del {
+    bottom: 45px;
+}

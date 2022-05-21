@@ -183,8 +183,14 @@ label{
 }
 
 /********************************************box du total*/
+.box-du-total{
+    overflow-y: hidden;
+}
 .box-tota-prix-n-delete{
     width: 50% !important;
+}
+#total{
+    overflow-y: hidden;
 }
 /******************************Display prod add**/
 .no-prod{

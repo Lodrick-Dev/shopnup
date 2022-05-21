@@ -184,24 +184,13 @@ label{
 }
 
 /********************************************box du total*/
-/* .box-du-total{
-    position: fixed;
-    background: #00ac39;
-    display: flex;
-    justify-content:flex-start;
-    bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    /* width: 40%; */
-    /* margin-bottom: 5px;
-    transform: translate(-50%, 50%);
-    left: 50%;
-    font-size: 1em; */
-/*}
-/* #total{
-    padding: 0 5px;
-    /* width: 60%; */
-/*} */
+.box-du-total{
+    overflow-y: hidden;
+}
+
+#total{
+    overflow-y: hidden;
+}
 /******************************Display prod add**/
 .no-prod{
     font-weight: bold;

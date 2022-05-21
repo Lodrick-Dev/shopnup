@@ -186,7 +186,7 @@ label{
 
 /********************************************box du total*/
 .box-tota-prix-n-delete{
-    width: 38%;
+    width: 40%;
     position: fixed;
     display: flex !important;
     flex-direction: column!important;
