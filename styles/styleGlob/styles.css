@@ -8,7 +8,6 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-
 /***********************le header*/
 header{
     width: 100%;
@@ -200,4 +199,39 @@ label{
     font-weight: 900;
     padding: 5px;
     border-radius: 5px;
+}
+
+
+
+.cach{
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 19;
+    height: 95%;
+    /* background: #fa9380; */
+    transform: translate(50%, -50%);
+}
+.cach > h1{
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    background: #635f5f;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+.cach::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: #fa9280c1;
+    backdrop-filter: blur(0.6rem);
+    /* filter: blur(1.5rem); */
 }
