@@ -1,3 +1,374 @@
 .cach{
     display: none;
 }
+
+@import url("https://fonts.googleapis.com/css2? family= Poppins & display=swap");
+html, body{
+    /* position: relative; */
+    background: rgb(15,19,51);
+    background: -moz-linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: -webkit-linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    background: linear-gradient(179deg, rgba(15,19,51,1) 0%, rgba(253,240,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1333",endColorstr="#fdf02d",GradientType=1);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    /* background: #fff; */
+}
+header > .logo{
+    position: absolute;
+    top: 0;
+    /* background: #00ac39; */
+}
+header > .logo > img{
+    height: 110px;
+}
+.btn-menu-swip{
+    position: absolute;
+    transition: 1s;
+    /* background: #00ac39; */
+    height: 30px;
+    width: 30px;
+    transform: translateX(500%);
+    /* transform: translate(0%, 100%); */
+    overflow: visible !important;
+}
+.btn-main-left{
+    transform: translateX(-480%) rotate(180deg);
+    /* left: 10px; */
+}
+#btn-menu > h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    animation: anim-b 5s linear infinite alternate;
+    pointer-events: none;
+}
+@keyframes anim-b {
+    0%{color: #ffffff;}
+    50%{color: #000000;}
+    100%{color: #ffffff;}
+}
+
+.box-nav{
+    position: absolute;
+    height: 30px;
+    top: 120px;
+    width: 90%;
+    /* background-color: rgb(105, 168, 168); */
+    padding: 0;
+    transform: translateX(130%);
+    overflow: visible;
+    /* transform: translateX(70%); */
+}
+.box-nav-actif{
+    transform: translateX(0);
+}
+
+/******************la nav*/
+nav{
+    margin: 0px auto;
+    border-radius: 3px;
+    width: 85%;
+    background: rgb(22, 29, 82);
+}
+nav > .box-ul{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+nav > .box-ul > a > li{
+    font-size: 0.8em;
+}
+.class-body{
+    width: 100%;
+}
+.class-body > h1,
+.class-body > h1 > span {
+    font-size: 1.2em;
+    padding: 5px 0;
+    font-weight: bold;
+    color: #fff;
+}
+/*****************************le form*/
+#id-form{
+    width: 100%;
+    padding: 0 5px;
+}
+label{
+    font-size: 0.9em;
+    font-weight:bold;
+    color: #fff;
+    padding-left: 5px;
+}
+.box-input-text,
+.box-input-price,
+.box-input-quant{
+    display: flex;
+    flex-direction: column;
+}
+.box-input-text > input {
+    font-size:  1.2em;
+    height: 32px;
+    font-weight: bold;
+    padding: 5px;
+}
+.box-input-price > input {
+    font-size:  1.1em;
+    height: 32px;
+    font-weight: bold;
+    padding: 5px;
+}
+.box-input-quant > label {
+   padding: 0;
+}
+#put-quant {
+    height: 32px;
+    font-weight: bold;
+    padding: 5px;
+    font-size:  1.2em !important;
+}
+.box-btn{
+    width: 10%;
+    overflow: visible;
+}
+
+#btn-add{
+    margin-top: 21px;
+    font-size: 1.2em;
+    height: 32px;
+    font-weight: bold;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn-add > i{
+    pointer-events: none;
+}
+/*******************le tri*/
+.box-select{
+    width: 100%;
+}
+#trie-cours{
+    width: 25%;
+    height: 20px;
+    background: rgba(15,19,51,1);
+    color: #fff;
+    outline: none;
+}
+#trie-cours > option{
+    font-weight: 800;
+}
+/********************************legend*/
+.legend{
+    width: 90%;
+    padding: 0 3px;
+}
+.legend > .sous-legend{
+    width: 100%;
+}
+.sous-legend > div{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.sous-legend > div:nth-child(4){
+    font-size: 0.7em;
+}
+
+/********************************************box du total*/
+.box-tota-prix-n-delete{
+    width: 40%;
+    position: fixed;
+    /* position: relative; */
+    display: flex !important;
+    flex-direction: column!important;
+    height: 20vh;
+    padding: 5px;
+    border-radius: 5px;
+    background: #00ac39;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin-bottom: 10px;
+    overflow-y: hidden;
+}
+
+.box-du-total{
+    background: #fff;
+    display: flex !important;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold !important;
+}
+#total{
+    padding: 0 5px;
+}
+#btn-to-clear-all{
+    background: crimson;
+    border-radius: 5px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 10px;
+}
+#btn-to-clear-all > i{
+    font-size: 2em;
+    pointer-events: none;
+}
+
+.add-class-to-btn-del {
+    bottom: 45px;
+}
+/******************************Display prod add**/
+.no-prod{
+    font-weight: bold;
+}
+.add-de-user{
+    width: 95%;
+    border-radius: 3px;
+}
+.sous-legend{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 0.5fr;
+}
+.prod-add-js{
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 0.5fr;
+}
+.btn-supp-new-js {
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-spp-new-js > i{
+    pointer-events: none;
+}
+.result{
+    width: 100%;
+}
+.result > div{
+    font-size: 1em;
+    font-weight: bold;
+}
+/****************************section contact***/
+#section-contact > div{
+ width: 80%;
+ margin: 50px auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 1em;
+}
+#section-contact > div > a{
+    font-size: 1.4em;
+    color: #00ac39;
+}
+#page-info > div{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*animation*/
+.box-tota-prix-n-delete > span{
+    position: absolute;
+}
+.box-tota-prix-n-delete > span:nth-child(1){
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #005270);
+    animation: animtop 1s linear infinite;
+}
+@keyframes animtop {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(2){
+    top: -100%;
+    right: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #005270);
+    animation: animright 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animright {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(3){
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #005270);
+    animation: animbottom 1s linear infinite;
+    animation-delay: .55s;
+}
+@keyframes animbottom {
+    0% {
+        right: -100%;
+    }
+    
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(4){
+    bottom: -100%;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #005270);
+    animation: animleft 1s linear infinite;
+    animation-delay: .80s;
+}
+@keyframes animleft {
+    0% {
+        bottom: -100%;
+    }
+    
+    50%, 100% {
+        bottom: 100%;
+    }
+}

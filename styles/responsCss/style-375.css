@@ -228,5 +228,8 @@ label{
 }
 
 .box-tota-prix-n-delete{
-    bottom: -10px !important;
+    bottom: -22px;
 }
+/* .add-class-to-btn-del {
+    transform: translateX(50%);
+} */

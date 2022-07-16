@@ -191,7 +191,6 @@ label{
     /* position: relative; */
     display: flex !important;
     flex-direction: column!important;
-    justify-content: space-between;
     height: 20vh;
     padding: 5px;
     border-radius: 5px;
@@ -208,7 +207,7 @@ label{
     display: flex !important;
     padding: 5px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
     color: #000000;
     font-size: 1em;
@@ -225,6 +224,7 @@ label{
     justify-content: center;
     align-items: center;
     padding: 3px;
+    margin: 10px;
 }
 #btn-to-clear-all > i{
     font-size: 2em;
