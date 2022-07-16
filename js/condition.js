@@ -9,12 +9,10 @@ function handleGesture() {
   if (touchendX < touchstartX){
       btn_main.classList.add('btn-main-left');
       box_main.classList.add("box-nav-actif")
-      //   alert('swiped left!');
     }
     if (touchendX > touchstartX){
         btn_main.classList.remove('btn-main-left');
         box_main.classList.remove("box-nav-actif")
-    //   alert('swiped right!')
   }
 }
 
