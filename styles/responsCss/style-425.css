@@ -187,7 +187,8 @@ label{
 /********************************************box du total*/
 .box-tota-prix-n-delete{
     width: 40%;
-    position: fixed;
+    /* position: fixed; */
+    position: relative;
     display: flex !important;
     flex-direction: column!important;
     justify-content: space-between;
@@ -195,7 +196,7 @@ label{
     padding: 5px;
     border-radius: 5px;
     background: #00ac39;
-    bottom: -15px;
+    bottom: -155px;
     left: 50%;
     transform: translate(-50%, 50%);
     margin-bottom: 10px;
@@ -292,4 +293,80 @@ label{
 }
 .cach{
     display: none;
+}
+/*animation*/
+.box-tota-prix-n-delete > span{
+    position: absolute;
+}
+.box-tota-prix-n-delete > span:nth-child(1){
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #005270);
+    animation: animtop 1s linear infinite;
+}
+@keyframes animtop {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(2){
+    top: -100%;
+    right: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #005270);
+    animation: animright 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animright {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(3){
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #005270);
+    animation: animbottom 1s linear infinite;
+    animation-delay: .55s;
+}
+@keyframes animbottom {
+    0% {
+        right: -100%;
+    }
+    
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.box-tota-prix-n-delete > span:nth-child(4){
+    bottom: -100%;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #005270);
+    animation: animleft 1s linear infinite;
+    animation-delay: .80s;
+}
+@keyframes animleft {
+    0% {
+        bottom: -100%;
+    }
+    
+    50%, 100% {
+        bottom: 100%;
+    }
 }

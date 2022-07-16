@@ -188,6 +188,7 @@ label{
 }
 .box-tota-prix-n-delete{
     width: 50% !important;
+    bottom: 152px !important;
 }
 #total{
     overflow-y: hidden;

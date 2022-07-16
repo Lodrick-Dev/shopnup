@@ -226,3 +226,7 @@ label{
 .cach{
     display: none;
 }
+
+.box-tota-prix-n-delete{
+    bottom: -175px !important;
+}
