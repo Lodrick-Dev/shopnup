@@ -4,6 +4,7 @@
     flex-direction: column!important;
     justify-content: space-around;
     /* background: #fff; */
+    bottom: -20px;
 }
 
 .add-class-to-btn-del {
